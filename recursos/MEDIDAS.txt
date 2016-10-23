@@ -1,0 +1,6 @@
+370 * 507 - para la pagina de productos
+480 * 700 - para productos en home
+
+portada
+1600 * 70
+
