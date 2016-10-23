@@ -6,5 +6,13 @@ class HomeController extends BaseController {
 	{
 		return View::make('inicio');
 	}
+	public function getProducto()
+	{
+		return View::make('producto');
+	}
+	public function getDamas()
+	{
+		return View::make('damas');
+	}
 
 }

@@ -1719,10 +1719,16 @@ a.add_lovelist:hover {
 	width:32px;
 	height:22px;
 }
-.tovar_color_select a.color1 {background-color:#7d97b0;}
-.tovar_color_select a.color2 {background-color:#d6c4b5;}
-.tovar_color_select a.color3 {background-color:#779574;}
-.tovar_color_select a.color4 {background-color:#bf9bcb;}
+.tovar_color_select a.negro {background-color:#000}
+.tovar_color_select a.negro-oro {background-color:#000}
+.tovar_color_select a.rosa {background-color:#d2a99f}
+.tovar_color_select a.charol-rosa {background-color:#e4b8a9}
+.tovar_color_select a.charol-negro {background-color:#0b0a0a}
+.tovar_color_select a.blanco {background-color:#fff}
+.tovar_color_select a.beige {background-color:#e3d9ca}
+.tovar_color_select a.natural {background-color:#a8633f}
+.tovar_color_select a.tofi {background-color:#a47051}
+.tovar_color_select a.apache {background-color:#6d3e35}
 .tovar_color_select a:before {
 	content:'';
 	position:absolute;
@@ -1837,7 +1843,7 @@ a.add_lovelist:hover {
 	padding-bottom:25px;
 	border-bottom:1px solid #e9e9e9;
 }
-.tovar_items_small {padding-top:35px;}
+.tovar_items_small {/*padding-top:35px;*/}
 .tovar_items_small li {
 	padding:0 0 27px;
 	transition: all 0.3s ease-in-out;
@@ -2665,13 +2671,18 @@ ul.comments li ul li{
 	transition: none;
 	-webkit-transition: none;
 }
-.widget_color li a.color1 {background-color:#dc4343;}
-.widget_color li a.color2 {background-color:#61acf2;}
-.widget_color li a.color3 {background-color:#63c85b;}
-.widget_color li a.color4 {background-color:#ddc332;}
-.widget_color li a.color5 {background-color:#c98d4c;}
-.widget_color li a.color6 {background-color:#b771db;}
-.widget_color li a.color7 {background-color:#d3d3d3;}
+
+.widget_color li a.negro {background-color:#000}
+.widget_color li a.negro-oro {background-color:#000}
+.widget_color li a.rosa {background-color:#d2a99f}
+.widget_color li a.charol-rosa {background-color:#e4b8a9}
+.widget_color li a.charol-negro {background-color:#0b0a0a}
+.widget_color li a.blanco {background-color:#fff}
+.widget_color li a.beige {background-color:#e3d9ca}
+.widget_color li a.natural {background-color:#a8633f}
+.widget_color li a.tofi {background-color:#a47051}
+.widget_color li a.apache {background-color:#6d3e35}
+
 .widget_color li a.color8 {
 	background: #e40d3f; /* Old browsers */
 	background: -moz-linear-gradient(left, #e40d3f 0%, #d70de4 20%, #440de4 40%, #0daae4 60%, #0de444 80%, #e1ec2b 100%); /* FF3.6+ */
@@ -4277,7 +4288,7 @@ footer a:hover {color:#fff;}
 .foot_phone a {
 	font-weight:900;
 	line-height:26px;
-	font-size:16px;
+	font-size:13px;
 	color:#ccc !important;
 }
 
@@ -4286,6 +4297,7 @@ footer a:hover {color:#fff;}
 	display:inline-block;
 	line-height:20px;
 	color:#999;
+	font-size:13px
 }
 .foot_mail a:hover {color:#fff;}
 

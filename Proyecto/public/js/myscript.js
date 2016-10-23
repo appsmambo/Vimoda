@@ -481,6 +481,15 @@ jQuery(document).ready(function() {
 });
 
 
+jQuery(document).ready(function() {
+	$('.sharer.facebook').click(function() {
+		FB.ui({
+			method: 'feed',
+			link: 'http://vimodashoes.pe/',
+			caption: 'An example caption',
+		}, function(response){});
+	});
+});
 
 
 
