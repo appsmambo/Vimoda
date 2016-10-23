@@ -146,29 +146,18 @@ html[xmlns] .slides {display: block;}
 
 /* Top Slider Caption */
 .flexslider.top_slider .slide1 {
-	width:100%;
-	background-image:url(../images/slider/slide-1.jpg);
-	background-size:cover;
+	width:100%
 }
 .flexslider.top_slider .slide2 {
-	width:100%;
-	background-color:#0b8e79;
-	background-image:url(../images/slider/slide-2.jpg);
-	background-size:cover;
+	width:100%
 }
 .flexslider.top_slider .slide3 {
-	width:100%;
-	background-color:#0b8e79;
-	background-image:url(../images/slider/slide-3.jpg);
-	background-size:cover;
+	width:100%
 }
 .flexslider.top_slider .slide4 {
-	width:100%;
-	background-color:#0b8e79;
-	background-image:url(../images/slider/slide-4.jpg);
-	background-size:cover;
+	width:100%
 }
-.flexslider.top_slider .slides li {height:700px;}
+.flexslider.top_slider .slides li {}
 
 .flexslider.top_slider .container {
 	position:relative;
@@ -629,9 +618,9 @@ a.slide_banner:hover:before {
 @media (min-width: 992px) and (max-width: 1199px) {
 
 /* __________ Top Slider __________ */
-	.flexslider.top_slider .slides li {height:520px;}
+	.flexslider.top_slider .slides li {}
 	
-	.slide1_banner1, .slide1_banner2 {width:220px;}
+	.slide1_banner1, .slide1_banner2 {}
 	.slide1_banner3 {width:470px;}
 	.top_slider .slide1 .flex_caption3, .top_slider .slide2 .flex_caption3, .top_slider .slide3 .flex_caption3 {bottom:30px;}
 
@@ -641,7 +630,7 @@ a.slide_banner:hover:before {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* __________ Top Slider __________ */
-	.flexslider.top_slider .slides li {height:400px;}
+	.flexslider.top_slider .slides li {}
 	
 	.slide1_banner1, .slide1_banner2 {width:168px;}
 	.slide1_banner3 {width:356px;}
@@ -661,7 +650,7 @@ a.slide_banner:hover:before {
 
 @media (max-width: 767px) {
 	/* __________ Top Slider __________ */
-	.flexslider.top_slider .slides li {height:350px;}
+	.flexslider.top_slider .slides li {}
 	
 	.top_slider .flex_caption3 {left:15px !Important; text-align:center !important;}
 	.slide1_banner1, .slide1_banner2 {width:102px; margin:0 2px 0 5px !important;}
@@ -687,7 +676,7 @@ a.slide_banner:hover:before {
 	.top_slider .slide1 .flex_caption3, .top_slider .slide2 .flex_caption3, .top_slider .slide3 .flex_caption3 {display:none;}
 	
 	
-	.flexslider.top_slider .slides li {height:260px;}
+	.flexslider.top_slider .slides li {}
 	
 	
 	.top_slider .flex_caption1 {top:50% !important;}

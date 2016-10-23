@@ -60,7 +60,7 @@
 
 						<!-- CONTAINER -->
 						<div class="container clearfix">
-							<ul class="secondary_menu">
+							<ul class="secondary_menu hidden-xs">
 								<li><a href="{{url('')}}"><strong>LA EMPRESA</strong></a></li>
 								<li><a href="{{url('')}}"><strong>CATÁLOGOS Y DISTRIBUCIÓN</strong></a></li>
 							</ul>
@@ -70,16 +70,16 @@
 									<i class="fa fa-phone"></i> 1 800 888 2828
 								</a>
 								&nbsp;
-								<a href="javascript:void(0);" target="_blank">
+								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
 									<i class="fa fa-envelope"></i>
 								</a>
-								<a href="javascript:void(0);" target="_blank">
+								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
 									<i class="fa fa-facebook"></i>
 								</a>
-								<a href="javascript:void(0);" target="_blank">
+								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
 									<i class="fa fa-pinterest"></i>
 								</a>
-								<a href="javascript:void(0);" target="_blank">
+								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
 									<i class="fa fa-instagram"></i>
 								</a>
 							</div>

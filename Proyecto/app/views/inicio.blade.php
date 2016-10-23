@@ -7,31 +7,24 @@
 					<div class="flexslider top_slider">
 						<ul class="slides">
 							<li class="slide1">
-								<!-- CONTAINER -->
-								<div class="container">
-									
-								</div><!-- //CONTAINER -->
+								<img src="{{url('images/slider/slide-1.jpg')}}" class="visible-lg visible-md" alt="">
+								<img src="{{url('images/slider/slide-320-380.jpg')}}" class="visible-xs" alt="">
 							</li>
 
 							<li class="slide2">
-								<!-- CONTAINER -->
-								<div class="container">
-									
-								</div><!-- //CONTAINER -->
+								
+									<img src="{{url('images/slider/slide-2.jpg')}}" class="visible-lg visible-md" alt="">
+								<img src="{{url('images/slider/slide-320-380.jpg')}}" class="visible-xs" alt="">
 							</li>
 
 							<li class="slide3">
-								<!-- CONTAINER -->
-								<div class="container">
-									
-								</div><!-- //CONTAINER -->
+								<img src="{{url('images/slider/slide-3.jpg')}}" class="visible-lg visible-md" alt="">
+								<img src="{{url('images/slider/slide-320-380.jpg')}}" class="visible-xs" alt="">
 							</li>
 
 							<li class="slide4">
-								<!-- CONTAINER -->
-								<div class="container">
-									
-								</div><!-- //CONTAINER -->
+									<img src="{{url('images/slider/slide-4.jpg')}}" class="visible-lg visible-md" alt="">
+								<img src="{{url('images/slider/slide-320-380.jpg')}}" class="visible-xs" alt="">
 							</li>
 						</ul>
 					</div><!-- //TOP SLIDER -->
