@@ -2,9 +2,17 @@
 
 class HomeController extends BaseController {
 
+	private $_clase = null;
+	
+	public function __construct()
+    {
+		$this->_clase = '';
+		View::share('claseBody', $this->_clase);
+    }
 	public function getInicio()
 	{
-		return View::make('inicio');
+		$clase = 'inicio';
+		return View::make('inicio')->with('claseBody', $clase);
 	}
 	public function getProducto()
 	{

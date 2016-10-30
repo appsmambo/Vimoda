@@ -5,8 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!--<link rel="shortcut icon" href="images/favicon.ico" />-->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<title>Tienda Virtual - Vimoda</title>
 		<meta name="description" content="Moda y calidad en tus pies.">
 		<meta name="author" content="Juan Carlos Quintanilla">
@@ -14,36 +12,38 @@
 		<meta property="og:site_name" content="Vimoda">
 		<meta property="og:title" content="Tienda Virtual - Vimoda">
 		<meta property="og:type" content="web">
-		<meta property="og:url" content="http://vimodashoes.pe/web-2016">
-		<meta property="og:image" content="http://vimodashoes.pe/web-2016/images/compartir.jpg">
+		<meta property="og:url" content="{{url()}}">
+		<meta property="og:image" content="{{url('images/share/vimoda.jpg')}}">
 		<meta property="og:locale" content="es_ES">
 		<meta property="og:description" content="Moda y calidad en tus pies.">
+		<!-- fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i">
+		<link rel="stylesheet" href="https://use.fontawesome.com/4db0b8c4f3.css">
 		<!-- CSS -->
-		<link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
-		<link href="{{url('css/flexslider.css')}}" rel="stylesheet" type="text/css">
-		<link href="{{url('css/fancySelect.css')}}" rel="stylesheet" media="screen, projection">
-		<link href="{{url('css/animate.css')}}" rel="stylesheet" type="text/css" media="all">
-		<link href="{{url('css/style.css')}}" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="{{url('css/bootstrap.min.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/flexslider.css')}}">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="{{url('css/fancySelect.css')}}">
+		<link rel="stylesheet" type="text/css" media="all" href="{{url('css/animate.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/style.css')}}">
 	</head>
-	<body>
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '343828752408182',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+	<body class="<?php echo $claseBody ?>">
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId   : '343828752408182',
+			  xfbml   : true,
+			  version : 'v2.8'
+			});
+		  };
+		  (function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
 		<!-- PRELOADER -->
 		<div id="preloader"><img src="{{url('images/preloader.gif')}}" alt="" /></div>
 		<!-- //PRELOADER -->
@@ -61,26 +61,12 @@
 						<!-- CONTAINER -->
 						<div class="container clearfix">
 							<ul class="secondary_menu hidden-xs">
-								<li><a href="{{url('')}}"><strong>LA EMPRESA</strong></a></li>
-								<li><a href="{{url('')}}"><strong>CATÁLOGOS Y DISTRIBUCIÓN</strong></a></li>
+								<li><a href="{{url('')}}">La Empresa</a></li>
+								<li><a href="{{url('')}}">Catálogos y Distribución</a></li>
 							</ul>
-							<!--<div class="live_chat"><a href="javascript:void(0);" ><i class="fa fa-comment-o"></i> Live chat</a></div>-->
 							<div class="phone_top">
 								<a href="tel:1 800 888 2828">
 									<i class="fa fa-phone"></i> 1 800 888 2828
-								</a>
-								&nbsp;
-								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
-									<i class="fa fa-envelope"></i>
-								</a>
-								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
-									<i class="fa fa-pinterest"></i>
-								</a>
-								<a href="javascript:void(0);" target="_blank" class="hidden-xs">
-									<i class="fa fa-instagram"></i>
 								</a>
 							</div>
 						</div><!-- //CONTAINER -->
@@ -111,7 +97,6 @@
 								<li><a href="{{url('damas')}}">Damas</a></li>
 								<li><a href="javascript:void(0);">Caballeros</a></li>
 								<li><a href="javascript:void(0);">Niños</a></li>
-								<li><a href="javascript:void(0);">Accesorios</a></li>
 								<li class="last sale_menu"><a href="javascript:void(0);">Contacto</a></li>
 							</ul><!-- //MENU -->
 						</div><!-- //MENU BLOCK -->
@@ -135,7 +120,6 @@
 								<div class="foot_phone"><a href="tel:017130530">Provincia 1: 713 0530</a></div>
 								<div class="foot_phone"><a href="tel:017130530">Provincia 2: 713 0530</a></div>
 								<div class="foot_mail"><a href="mailto:informes@vimoda.pe">informes@vimoda.pe</a></div>
-<!--								<div class="foot_live_chat"><a href="javascript:void(0);" ><i class="fa fa-comment-o"></i> Live chat</a></div>-->
 							</div>
 
 							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 col-ss-12 padbot30">
@@ -168,8 +152,8 @@
 								<h4>Síguenos en redes sociales</h4>
 								<div class="social">
 									<a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-instagram"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-pinterest"></i></a>
 								</div>
 							</div>
 						</div><!-- //ROW -->
@@ -190,6 +174,17 @@
 					</div><!-- //COPYRIGHT -->
 				</footer><!-- //FOOTER -->
 			</div><!-- //PAGE -->
+			<div class="sticky-social text-center hidden-xs">
+				<a href="javascript:void(0);">
+					<i class="fa fa-3x fa-facebook-square"></i>
+				</a>
+				<a href="javascript:void(0);">
+					<i class="fa fa-3x fa-twitter-square"></i>
+				</a>
+				<a href="javascript:void(0);">
+					<i class="fa fa-3x fa-pinterest-square"></i>
+				</a>
+			</div>
 		</div>
 
 		<!-- TOVAR MODAL CONTENT -->
@@ -212,7 +207,8 @@
 		<script src="{{url('js/animate.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/myscript.js')}}" type="text/javascript"></script>
 		<script>
-			if (top != self)
+			// hack iframe
+			if (top !== self)
 				top.location.replace(self.location.href);
 		</script>
 	</body>
