@@ -81,8 +81,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/KI815-VIMODA-CHAROL-NEGRO-35-39modelo.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/KI815-VIMODA-CHAROL-NEGRO-35-39modelo.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/KI815-VIMODA-CHAROL-NEGRO-35-39modelo.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/KI815-VIMODA-CHAROL-NEGRO-35-39modelo.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">
@@ -108,8 +110,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">
@@ -134,8 +138,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/106-AZALEIA-BEIGE-34-39-modelo.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">
@@ -170,8 +176,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">
@@ -197,8 +205,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/447 azaleia negro modelo.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/447 azaleia negro modelo.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/447 azaleia negro modelo.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/447 azaleia negro modelo.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">
@@ -224,8 +234,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/KI850-VIMODA-TOFI-35-39-modelo01.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/KI850-VIMODA-TOFI-35-39-modelo01.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/KI850-VIMODA-TOFI-35-39-modelo01.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/KI850-VIMODA-TOFI-35-39-modelo01.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">
@@ -250,8 +262,10 @@
 					<div class="tovar_item">
 						<div class="tovar_img">
 							<div class="tovar_img_wrapper">
-								<img class="img" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
-								<img class="img_h" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
+								<a class="tovar_title" href="{{url('/damas/sandalias/azaleia-106')}}">
+									<img class="img" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
+									<img class="img_h" src="{{url('_uploads_/KI807-VIMODA-NATURAL-35-39-modelo.jpg')}}" alt="" />
+								</a>
 							</div>
 							<div class="tovar_item_btns">
 								<div class="open-project-link">

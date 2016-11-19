@@ -98,18 +98,18 @@
 							<a class="sizeS" href="javascript:void(0);">38</a>
 							<a class="sizeS" href="javascript:void(0);">39</a>
 						</div>
-						<div class="tovar_size_select">
+						<div class="tovar_caracteristica">
 							<div class="clearfix">
-								<p class="pull-left">Características</p>
+								<p class="pull-left"><strong>Características</strong></p>
 							</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-								Curabitur facilisis est non est gravida tincidunt.<br>
-								Etiam non dui volutpat massa molestie fringilla.
+								Característica #1<br>
+								Característica #2<br>
+								Característica #3
 							</p>
 						</div>
 						<div class="tovar_view_btn">
-							<a class="add_bag" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i> ¡Lo quiero!</a>
+							<a class="add_bag fancybox" href="#formulario" ><i class="fa fa-shopping-cart"></i> ¡Lo quiero!</a>
 						</div>
 						<div class="tovar_shared clearfix">
 							<p>Compártelo con tus amigos</p>
@@ -126,7 +126,7 @@
 
 				<!-- TOVAR INFORMATION -->
 				<div class="tovar_information">
-					<div class="fb-comments" data-href="http://www.vimodashoes.pe" data-numposts="5"></div>
+					<div class="fb-comments" data-href="http://www.vimodashoes.pe" data-width="100%" data-numposts="5"></div>
 				</div><!-- //TOVAR INFORMATION -->
 			</div><!-- //TOVAR DETAILS WRAPPER -->
 		</div><!-- //ROW -->
@@ -135,7 +135,7 @@
 
 
 <!-- BANNER SECTION -->
-<section class="banner_section">
+<section class="banner_section" style="display: none">
 
 	<!-- CONTAINER -->
 	<div class="container">
@@ -165,5 +165,32 @@
 		</div><!-- //ROW -->
 	</div><!-- //CONTAINER -->
 </section><!-- //BANNER SECTION -->
+
+<div class="hidden">
+	<div id="formulario">
+		<div class="sidepanel widget_newsletter">
+			<div class="newsletter_wrapper">
+				<h3 class="text-center"><strong>Completa los datos del formulario para atender tu pedido:</strong></h3>
+				<form class="newsletter_form clearfix" action="javascript:void(0);" method="get">
+					<div class="row">
+						<div class="col-sm-5">
+							<img src="{{url('_uploads_/producto-detalle/106-AZALEIA-NEGRO-34-39-2.jpg')}}" alt="" class="img-responsive center-block">
+						</div>
+						<div class="col-sm-7">
+							<p>
+								<br>
+							</p>
+							<input type="text" name="newsletter" placeholder="Nombre completo" />
+							<input type="email" name="newsletter" placeholder="Email" />
+							<input type="tel" name="newsletter" placeholder="Teléfono" />
+							<textarea placeholder="Detalla tu pedido"></textarea>
+							<input class="btn newsletter_btn" type="submit" value="¡Lo quiero!">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 @stop

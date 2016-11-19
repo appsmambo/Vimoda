@@ -18,10 +18,11 @@
 		<meta property="og:description" content="Moda y calidad en tus pies.">
 		<!-- fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i">
-		<link rel="stylesheet" href="https://use.fontawesome.com/4db0b8c4f3.css">
+		<link rel="stylesheet" href="{{url('css/fonts.css')}}">
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="{{url('css/bootstrap.min.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/flexslider.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('js/fancyapps-fancyBox/jquery.fancybox.css')}}">
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="{{url('css/fancySelect.css')}}">
 		<link rel="stylesheet" type="text/css" media="all" href="{{url('css/animate.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/style.css')}}">
@@ -93,11 +94,11 @@
 
 							<!-- MENU -->
 							<ul class="navmenu center">
-								<li class="first active"><a href="{{url('/')}}">Inicio</a></li>
-								<li><a href="{{url('damas')}}">Damas</a></li>
-								<li><a href="javascript:void(0);">Caballeros</a></li>
-								<li><a href="javascript:void(0);">Niños</a></li>
-								<li class="last sale_menu"><a href="javascript:void(0);">Contacto</a></li>
+								<li class="first {{ ($menu == 'inicio') ? 'active' : '' }}"><a href="{{url('/')}}">Inicio</a></li>
+								@foreach ($categoriasPadre as $categoria)
+								<li class="{{ ($menu == $categoria['url']) ? 'active' : '' }}"><a href="{{url('categoria/'.$categoria['url'])}}">{{$categoria['descripcion']}}</a></li>
+								@endforeach
+								<li class="last sale_menu {{ ($menu == 'contacto') ? 'active' : '' }}"><a href="{{url('contacto')}}">Contacto</a></li>
 							</ul><!-- //MENU -->
 						</div><!-- //MENU BLOCK -->
 					</div><!-- //CONTAINER -->
@@ -143,18 +144,13 @@
 							<div class="respond_clear_768"></div>
 
 							<div class="col-lg-4 col-md-4 padbot30">
-								<h4>Recibe nuestras novedades</h4>
+								<h4>Recibe nuestras ofertas</h4>
 								<form class="newsletter_form clearfix" action="javascript:void(0);" method="get">
-									<input type="text" name="newsletter" placeholder="Ingrese su email" />
+									<input type="text" name="nombre" placeholder="Nombre" />
+									<input type="email" name="email" placeholder="Email" />
+									<input type="tel" name="telefono" placeholder="Teléfono" />
 									<input class="btn newsletter_btn" type="submit" value="ENVIAR">
 								</form>
-
-								<h4>Síguenos en redes sociales</h4>
-								<div class="social">
-									<a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
-									<a href="javascript:void(0);" ><i class="fa fa-pinterest"></i></a>
-								</div>
 							</div>
 						</div><!-- //ROW -->
 					</div><!-- //CONTAINER -->
@@ -167,8 +163,7 @@
 							<div class="foot_logo"><a href="index.html" ><img src="{{url('images/logo-footer.png')}}" alt="" /></a></div>
 
 							<div class="copyright_inf">
-								<span>VIMODA NEW FASHION</span> |
-								<a class="back_top" href="javascript:void(0);">volver arriba <i class="fa fa-angle-up"></i></a>
+								<a class="back_top" href="javascript:void(0);">subir <i class="fa fa-angle-up"></i></a>
 							</div>
 						</div><!-- //CONTAINER -->
 					</div><!-- //COPYRIGHT -->
@@ -199,11 +194,13 @@
 
 		<script src="{{url('js/jquery.min.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/bootstrap.min.js')}}" type="text/javascript"></script>
+		<script src="{{url('js/jquery.mousewheel-3.0.6.pack')}}" type="text/javascript"></script>
 		<script src="{{url('js/jquery.sticky.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/parallax.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/jquery.flexslider-min.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/jquery.jcarousel.js')}}" type="text/javascript"></script>
-		<script src="{{url('js/fancySelect.js')}}"></script>
+		<script src="{{url('js/fancySelect.js')}}" type="text/javascript"></script>
+		<script src="{{url('js/fancyapps-fancyBox/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/animate.js')}}" type="text/javascript"></script>
 		<script src="{{url('js/myscript.js')}}" type="text/javascript"></script>
 		<script>

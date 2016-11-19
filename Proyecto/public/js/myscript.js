@@ -489,6 +489,17 @@ jQuery(document).ready(function() {
 			caption: 'An example caption',
 		}, function(response){});
 	});
+	$(".fancybox").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 500,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 });
 
 
