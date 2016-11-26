@@ -15,9 +15,12 @@ class HomeController extends BaseController {
 	public function getInicio()
 	{
 		$clase = 'inicio';
+		// obtener los productos destacados
+		$destacados = Producto::where('destacado', 1)->get();
 		return View::make('inicio')
 				->with('claseBody', $clase)
-				->with('menu', 'inicio');
+				->with('menu', 'inicio')
+				->with('destacado', $destacados);
 	}
 	public function getContacto()
 	{
