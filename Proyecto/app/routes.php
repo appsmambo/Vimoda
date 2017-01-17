@@ -16,6 +16,9 @@ Route::get('/admin-logout', 'AdminController@getLogout');
 Route::group(array('before' => 'auth.admin'), function()
 {
 	Route::get('/admin-inicio', array('as' => 'admin.inicio', 'uses' => 'AdminController@getAdminInicio'));
+	Route::get('/admin-sliders', array('as' => 'admin.sliders', 'uses' => 'AdminController@getAdminSliders'));
+	Route::get('/admin-configuracion', array('as' => 'admin.configuracion', 'uses' => 'AdminController@getAdminConfiguracion'));
+	
 	Route::post('/admin-consulta', 'AdminController@postConsulta');
 	Route::get('/admin-registrados', 'AdminController@getRegistrados');
 	Route::post('/admin-registrados', 'AdminController@postRegistrados');

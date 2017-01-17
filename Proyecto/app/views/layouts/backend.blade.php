@@ -4,16 +4,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Sdely</title>
-		<meta name="description" content="agg tmr, report team, mid no compra wards">
-		<link href="{{url('bower_components/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
-		<link href="{{url('bower_components/metisMenu/dist/metisMenu.min.css')}}" rel="stylesheet">
-		<link href="{{url('dist/css/timeline.css')}}" rel="stylesheet">
-		<link href="{{url('dist/css/sb-admin-2.css')}}" rel="stylesheet">
-		<link href="{{url('bower_components/morrisjs/morris.css')}}" rel="stylesheet">
-		<link href="{{url('bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-		<link href="{{url('bower_components/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
+		<title>VIMODA</title>
+		<link rel="stylesheet" type="text/css" href="{{url('admin_files/bootstrap/css/bootstrap.min.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('admin_files/css/styles.css')}}">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -22,76 +17,66 @@
 			var baseUrl = '{{url()}}';
 		</script>
 	</head>
-	<body>
-		<div id="wrapper">
-			<!-- Navigation -->
-			<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="{{url('/admin-inicio')}}">{{Auth::user()->name}}</a>
+	<body class="login-bg">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<!-- Logo -->
+						<div class="logo">
+							<h1><a href="{{url('/admin-inicio')}}">Vimoda Administrador</a></h1>
+						</div>
+					</div>
+					@if (isset(Auth::user()->name))
+					<div class="col-md-5">
+						<div class="navbar navbar-inverse" role="banner">
+							<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}} <b class="caret"></b></a>
+										<ul class="dropdown-menu animated fadeInUp">
+											<!--<li><a href="profile.html">Profile</a></li>-->
+											<li><a href="{{url('admin-logout')}}">Salir</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					@endif
 				</div>
-				<!-- /.navbar-header -->
-				<div class="navbar-default sidebar" role="navigation">
-					<div class="sidebar-nav navbar-collapse">
-						<ul class="nav" id="side-menu">
-							@if (Auth::user()->flag)
-							<!--li>
-								<a href="{{url('/admin-xxx')}}"><i class="fa fa-thumbs-o-up fa-fw"></i> xxx</a>
-							</li-->
-							@endif
-							<li>
-								<a href="{{url('/admin-registrados')}}"><i class="fa fa-users fa-fw"></i> Reporte de registrados</a>
-							</li>
-							<li>
-								<a href="{{url('/admin-logout')}}"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
-							</li>
-							<li>
-								<a target="_blank" href="http://sdely.com/"><i class="fa fa-external-link fa-fw"></i> sdely.com</a>
-							</li>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="sidebar content-box" style="display: block;">
+						<ul class="nav">
+							<!-- Main menu -->
+							<li class="current"><a href="{{url('/admin-inicio')}}"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
+							<li><a href="{{url('/admin-sliders')}}"><i class="glyphicon glyphicon-record"></i> Sliders</a></li>
+							<li><a href="{{url('/admin-videos')}}"><i class="glyphicon glyphicon-film"></i> Videos en home</a></li>
+							<li><a href="{{url('/admin-configuracion')}}"><i class="glyphicon glyphicon-cog"></i> Configuración</a></li>
+							<li><a href="{{url('/admin-logout')}}"><i class="glyphicon glyphicon-remove"></i> Salir</a></li>
 						</ul>
 					</div>
-					<!-- /.sidebar-collapse -->
 				</div>
-				<!-- /.navbar-static-side -->
-			</nav>
-			<div id="page-wrapper">
-				@yield('contenido')
+				<div class="col-md-10">
+					@yield('contenido')
+				</div>
 			</div>
-			<!-- /#page-wrapper -->
 		</div>
-		<!-- /#wrapper -->
-
-		<!-- jQuery -->
-		<script src="{{url('bower_components/jquery/dist/jquery.min.js')}}"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="{{url('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-
-		<!-- Metis Menu Plugin JavaScript -->
-		<script src="{{url('bower_components/metisMenu/dist/metisMenu.min.js')}}"></script>
-
-		@if (isset($esInicio) && $esInicio == 'si')
-		<!-- Morris Charts JavaScript -->
-		<script>
-			var reporte = {{$reporte}};
-		</script>
-		<script src="{{url('bower_components/raphael/raphael-min.js')}}"></script>
-		<script src="{{url('bower_components/morrisjs/morris.min.js')}}"></script>
-		<script src="{{url('js/morris-data.js')}}"></script>
-		@endif
-
-		<script src="{{url('bower_components/blockUI/jquery.blockUI.js')}}"></script>
-
-		<script src="{{url('bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js')}}"></script>
-		<script src="{{url('bower_components/bootstrap-datepicker/locales/bootstrap-datepicker.es.min.js')}}"></script>
-
-		<!-- Custom Theme JavaScript -->
-		<script src="{{url('dist/js/sb-admin-2.js')}}"></script>
-		<script src="{{url('dist/js/admin.js')}}"></script>
+		<footer>
+			<div class="container">
+				<div class="copy text-center">
+					Copyright <?php echo date('Y') ?> <a href="http://www.vimoda.pe" target="_blank">Vimoda</a>
+				</div>
+			</div>
+		</footer>
+		<script src="{{url('admin_files/js/jquery.min.js')}}"></script>
+		<script src="{{url('admin_files/bootstrap/js/bootstrap.min.js')}}"></script>
+		<script src="{{url('admin_files/vendors/validation-1.15.1/jquery.validate.min.js')}}"></script>
+		<script src="{{url('admin_files/vendors/validation-1.15.1/localization/messages_es_PE.js')}}"></script>
+		<script src="{{url('admin_files/js/custom.js')}}"></script>
 	</body>
 </html>

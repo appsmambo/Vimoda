@@ -4,9 +4,8 @@ class AdminController extends BaseController
 {
 	public function getLogin()
 	{
-		// jsalinasto@gmail.com password: NmrxX9Fy
 		// quintanilla.peru@gmail.com password: limaperu
-		//$password = Hash::make('clave');
+		//$password = Hash::make('limaperu');
 		//echo $password;exit;
 		return View::make('admin.login');
 	}
@@ -28,7 +27,7 @@ class AdminController extends BaseController
 	}
 	public function getAdminInicio()
 	{
-		$sql = 'SELECT COUNT(DATE(created_at)) AS cantidad, DATE(created_at) AS fecha '
+		/*$sql = 'SELECT COUNT(DATE(created_at)) AS cantidad, DATE(created_at) AS fecha '
 				. 'FROM registro '
 				. 'GROUP BY DATE(created_at) '
 				. 'ORDER BY 2 DESC '
@@ -43,7 +42,8 @@ class AdminController extends BaseController
 			);
 		}
 		$reporte = json_encode($array);
-		return View::make('admin.index')->with('esInicio', 'si')->with('reporte', $reporte);
+		return View::make('admin.index')->with('esInicio', 'si')->with('reporte', $reporte);*/
+		return View::make('admin.index');
 	}
 	public function getRegistrados()
 	{
