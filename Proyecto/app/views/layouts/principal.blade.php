@@ -1,10 +1,11 @@
+@include('part.favicon')
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!--<link rel="shortcut icon" href="images/favicon.ico" />-->
+		@yield('favicon')
 		<title>Tienda Virtual - Vimoda</title>
 		<meta name="description" content="Moda y calidad en tus pies.">
 		<meta name="author" content="Juan Carlos Quintanilla">

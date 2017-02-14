@@ -11,14 +11,19 @@ class AdminController extends BaseController
 	}
 	public function postLogin()
 	{
-		$email = Input::get('email');
-		$clave = Input::get('clave');
-		// validar
-		if (Auth::attempt(array('email' => $email, 'password' => $clave))) {
-			return Redirect::to('/admin-inicio');
+		if (Request::isMethod('post')) {
+			$email = Input::get('email');
+			$clave = Input::get('clave');
+			// validar
+			if (Auth::attempt(array('email' => $email, 'password' => $clave))) {
+				return Redirect::to('/admin-inicio');
+			} else {
+				return View::make('admin.login')->with('msg', '¡Datos incorrectos!');
+			}
 		} else {
-			return View::make('admin.login')->with('msg', '¡Datos incorrectos!');
+			return View::make('admin.login');
 		}
+			
 	}
 	public function getLogout()
 	{
@@ -45,6 +50,12 @@ class AdminController extends BaseController
 		return View::make('admin.index')->with('esInicio', 'si')->with('reporte', $reporte);*/
 		return View::make('admin.index');
 	}
+	public function getAdminSliders()
+	{
+		$sliders = Sliders::all();
+		return View::make('admin.sliders.index');
+	}
+	
 	public function getRegistrados()
 	{
 		$sql = 'SELECT MIN(DATE(created_at)) AS inicio, MAX(DATE(created_at)) as fin FROM registro';
