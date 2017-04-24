@@ -16,8 +16,14 @@ Route::get('/admin-logout', 'AdminController@getLogout');
 Route::group(array('before' => 'auth.admin'), function()
 {
 	Route::get('/admin-inicio', array('as' => 'admin.inicio', 'uses' => 'AdminController@getAdminInicio'));
-	Route::get('/admin-sliders', array('as' => 'admin.sliders', 'uses' => 'AdminController@getAdminSliders'));
-	Route::get('/admin-configuracion', array('as' => 'admin.configuracion', 'uses' => 'AdminController@getAdminConfiguracion'));
+
+    // Sliders
+    Route::get('/admin-sliders', array('as' => 'admin.sliders', 'uses' => 'AdminController@getAdminSliders'));
+    Route::get('/admin-sliders-nuevo', array('as' => 'admin.sliders.nuevo', 'uses' => 'AdminController@getAdminSlidersNuevo'));
+    Route::post('/admin-sliders-grabar', array('as' => 'admin.sliders.grabar', 'uses' => 'AdminController@postAdminSlidersGrabar'));
+    Route::get('/admin-sliders-publicar/{id}/{estado}', array('as' => 'admin.sliders.publicar', 'uses' => 'AdminController@getAdminSlidersPublicar'));
+	
+    Route::get('/admin-configuracion', array('as' => 'admin.configuracion', 'uses' => 'AdminController@getAdminConfiguracion'));
 	
 	Route::post('/admin-consulta', 'AdminController@postConsulta');
 	Route::get('/admin-registrados', 'AdminController@getRegistrados');

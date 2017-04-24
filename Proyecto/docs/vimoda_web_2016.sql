@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-02-2017 a las 09:30:16
+-- Tiempo de generación: 24-04-2017 a las 06:35:20
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 5.6.24
 
@@ -252,6 +252,32 @@ CREATE TABLE `producto_color` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `sliders`
+--
+
+CREATE TABLE `sliders` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(100) DEFAULT NULL,
+  `archivo_lg` varchar(100) DEFAULT NULL,
+  `archivo_sm` varchar(100) DEFAULT NULL,
+  `archivo_xs` varchar(100) DEFAULT NULL,
+  `orden` tinyint(4) NOT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `estado` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `sliders`
+--
+
+INSERT INTO `sliders` (`id`, `descripcion`, `archivo_lg`, `archivo_sm`, `archivo_xs`, `orden`, `url`, `created_at`, `updated_at`, `estado`) VALUES
+(1, 'Banner Nativa', 'images/slider/lg/e2d34ca61c911a100db4549285df8362.jpg', 'images/slider/sm/e2d34ca61c911a100db4549285df8362.jpg', 'images/slider/xs/e2d34ca61c911a100db4549285df8362.jpg', 1, NULL, '2017-04-24 09:26:13', '2017-04-24 09:26:13', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `users`
 --
 
@@ -326,6 +352,12 @@ ALTER TABLE `producto_color`
   ADD KEY `color` (`color`);
 
 --
+-- Indices de la tabla `sliders`
+--
+ALTER TABLE `sliders`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
@@ -360,6 +392,11 @@ ALTER TABLE `marca`
 --
 ALTER TABLE `producto`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+--
+-- AUTO_INCREMENT de la tabla `sliders`
+--
+ALTER TABLE `sliders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
