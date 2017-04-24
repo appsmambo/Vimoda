@@ -54,11 +54,49 @@
                     <div class="sidebar content-box" style="display: block;">
                         <ul class="nav">
                             <!-- Main menu -->
-                            <li class="current"><a href="{{url('/admin-inicio')}}"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-                            <li><a href="{{url('/admin-sliders')}}"><i class="glyphicon glyphicon-record"></i> Sliders</a></li>
-                            <li><a href="{{url('/admin-videos')}}"><i class="glyphicon glyphicon-film"></i> Videos en home</a></li>
-                            <li><a href="{{url('/admin-configuracion')}}"><i class="glyphicon glyphicon-cog"></i> Configuración</a></li>
-                            <li><a href="{{url('/admin-logout')}}"><i class="glyphicon glyphicon-remove"></i> Salir</a></li>
+                            <li class="current">
+                                <a href="{{url('/admin-inicio')}}"><i class="glyphicon glyphicon-home"></i> Dashboard</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-list"></i> Opciones home
+                                    <span class="caret pull-right"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="{{url('/admin-sliders')}}"><i class="glyphicon glyphicon-record"></i> Sliders</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('/admin-videos')}}"><i class="glyphicon glyphicon-film"></i> Videos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-list"></i> Tienda Virtual
+                                    <span class="caret pull-right"></span>
+                                </a>
+                                <!-- Sub menu -->
+                                <ul>
+                                    <li>
+                                        <a href="#">Campaña</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Categorias</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Productos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="{{url('/admin-configuracion')}}"><i class="glyphicon glyphicon-cog"></i> Configuración</a>
+                            </li>
+                            <li>
+                                <a href="{{url('/admin-logout')}}"><i class="glyphicon glyphicon-remove"></i> Salir</a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>

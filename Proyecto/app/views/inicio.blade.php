@@ -5,29 +5,14 @@
     <!-- TOP SLIDER -->
     <div class="flexslider top_slider">
         <ul class="slides">
-            <li class="slide1">
-                <img src="{{url('images/slider/lg/slide-1.jpg')}}" class="visible-lg visible-md" alt="">
-                <img src="{{url('images/slider/sm/slide-1.jpg')}}" class="visible-sm" alt="">
-                <img src="{{url('images/slider/xs/slide-1.jpg')}}" class="visible-xs" alt="">
+            <?php $i = 0 ?>
+            @foreach($sliders as $slider)
+            <li class="slide{{$i+1}}">
+                <img src="{{url($slider->archivo_lg)}}" class="visible-lg visible-md" alt="">
+                <img src="{{url($slider->archivo_sm)}}" class="visible-sm" alt="">
+                <img src="{{url($slider->archivo_xs)}}" class="visible-xs" alt="">
             </li>
-
-            <li class="slide2">
-                <img src="{{url('images/slider/lg/slide-2.jpg')}}" class="visible-lg visible-md" alt="">
-                <img src="{{url('images/slider/sm/slide-2.jpg')}}" class="visible-sm" alt="">
-                <img src="{{url('images/slider/xs/slide-2.jpg')}}" class="visible-xs" alt="">
-            </li>
-
-            <li class="slide3">
-                <img src="{{url('images/slider/lg/slide-3.jpg')}}" class="visible-lg visible-md" alt="">
-                <img src="{{url('images/slider/sm/slide-3.jpg')}}" class="visible-sm" alt="">
-                <img src="{{url('images/slider/xs/slide-3.jpg')}}" class="visible-xs" alt="">
-            </li>
-
-            <li class="slide4">
-                <img src="{{url('images/slider/lg/slide-4.jpg')}}" class="visible-lg visible-md" alt="">
-                <img src="{{url('images/slider/sm/slide-4.jpg')}}" class="visible-sm" alt="">
-                <img src="{{url('images/slider/xs/slide-4.jpg')}}" class="visible-xs" alt="">
-            </li>
+            @endforeach
         </ul>
     </div><!-- //TOP SLIDER -->
 </section><!-- //HOME -->

@@ -27,6 +27,7 @@ $app = new Illuminate\Foundation\Application;
 $env = $app->detectEnvironment(array(
 
 	'local' => array('DESKTOP-EMH6O5M'),
+	'local' => array('MAMBO'),
 
 ));
 

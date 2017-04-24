@@ -36,7 +36,7 @@
         <td>
             <a data-registro="{{$slider->orden}}" 
                href="{{URL::to('/admin-sliders-publicar')}}/{{$slider->id}}/{{$slider->estado === 0 ? 1 : 0 }}" 
-               class="borrar btn btn-danger">
+               class="borrar btn btn-success">
                 @if ($slider->estado)
                 <i class="glyphicon glyphicon-check"></i>
                 @else
